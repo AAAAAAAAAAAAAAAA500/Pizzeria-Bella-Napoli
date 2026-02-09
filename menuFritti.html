@@ -1,124 +1,88 @@
-<html lang="it">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Fritti - Bella Napoli</title>
-    <style>
-        :root {
-            --red: #a61d24;
-            --cream: #fffdf5;
-            --dark: #2c2c2c;
-            --gold: #d4af37;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--cream);
-            color: var(--dark);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border-top: 8px solid var(--red);
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 2rem;
-            letter-spacing: 2px;
-            color: var(--red);
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px dashed #ddd;
-        }
-
-        li:last-child {
-            border-bottom: none;
-        }
-
-        .item-name {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        .price {
-            font-weight: bold;
-            color: var(--red);
-            background: #fff5f5;
-            padding: 4px 10px;
-            border-radius: 8px;
-        }
-
-        .back-link {
-            display: block;
-            text-align: center;
-            margin-top: 40px;
-            color: #777;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .back-link:hover {
-            color: var(--red);
-        }
-
-        li:hover {
-            background-color: #fafafa;
-            transform: scale(1.02);
-            transition: all 0.2s ease;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 5px;
-        }
-    </style>
 </head>
-<body>
+<body bgcolor="#FFFDF5" text="#333333">
 
-    <div class="container">
-        <h1>MENU FRITTI</h1>
+    <center>
+        <font face="Verdana" color="#A61D24" size="7">
+            <h1>MENU FRITTI</h1>
+        </font>
+        <hr color="#A61D24" width="50%">
+    </center>
+
+    <br>
+
+    <table align="center" border="0" cellpadding="15" width="600">
+        <tr>
+            <td>
+                <img src="https://via.placeholder.com/150x100?text=Crocchè" width="150" alt="Crocchè">
+            </td>
+            <td>
+                <font face="Arial" size="4">
+                    <b>Crocchè di patate (2 pezzi)</b><br>
+                    <font color="#2E7D32"><b>3,00€</b></font>
+                </font>
+            </td>
+            <td>
+                <form>
+                    <input type="button" value="Aggiungi +" onclick="alert('Aggiunto al carrello!')">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://via.placeholder.com/150x100?text=Arancino" width="150" alt="Arancino">
+            </td>
+            <td>
+                <font face="Arial" size="4">
+                    <b>Arancino siciliano</b><br>
+                    <font color="#2E7D32"><b>2,50€</b></font>
+                </font>
+            </td>
+            <td>
+                <form>
+                    <input type="button" value="Aggiungi +" onclick="alert('Aggiunto al carrello!')">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="https://via.placeholder.com/150x100?text=Frittatina" width="150" alt="Frittatina">
+            </td>
+            <td>
+                <font face="Arial" size="4">
+                    <b>Frittatina di pasta</b><br>
+                    <font color="#2E7D32"><b>3,00€</b></font>
+                </font>
+            </td>
+            <td>
+                <form>
+                    <input type="button" value="Aggiungi +" onclick="alert('Aggiunto al carrello!')">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <center>
+        <table bgcolor="#A61D24" cellpadding="10" width="300">
+            <tr>
+                <td align="center">
+                    <font color="white" face="Arial"><b>IL TUO CARRELLO: 0,00€</b></font>
+                </td>
+            </tr>
+        </table>
         
-        <ul>
-            <li>
-                <span class="item-name">Crocchè di patate <small>(2 pezzi)</small></span>
-                <span class="price">3,00€</span>
-            </li>
-            <li>
-                <span class="item-name">Arancino siciliano</span>
-                <span class="price">2,50€</span>
-            </li>
-            <li>
-                <span class="item-name">Frittatina di pasta</span>
-                <span class="price">3,00€</span>
-            </li>
-            <li>
-                <span class="item-name">Fiori di zucca fritti</span>
-                <span class="price">4,00€</span>
-            </li>
-        </ul>
-
-        <a href="index.html" class="back-link">← Torna alla Home</a>
-    </div>
+        <br>
+        
+        <font face="Arial" size="2">
+            <a href="index.html">Torna alla Home</a>
+        </font>
+    </center>
 
 </body>
 </html>
