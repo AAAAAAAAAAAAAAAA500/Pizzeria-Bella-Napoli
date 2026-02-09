@@ -1,17 +1,124 @@
-<html>
+<html lang="it">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Fritti - Bella Napoli</title>
+    <style>
+        :root {
+            --red: #a61d24;
+            --cream: #fffdf5;
+            --dark: #2c2c2c;
+            --gold: #d4af37;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--cream);
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 8px solid var(--red);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: var(--red);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--red);
+            background: #fff5f5;
+            padding: 4px 10px;
+            border-radius: 8px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--red);
+        }
+
+        li:hover {
+            background-color: #fafafa;
+            transform: scale(1.02);
+            transition: all 0.2s ease;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>MENU FRITTI</h1>
-    
-    <ul>
-        <li>Crocchè di patate (2 pezzi) - 3,00€</li>
-        <li>Arancino siciliano - 2,50€</li>
-        <li>Frittatina di pasta - 3,00€</li>
-        <li>Fiori di zucca fritti - 4,00€</li>
-    </ul>
 
-    <p><a href="index.html">Torna alla Home</a></p>
+    <div class="container">
+        <h1>MENU FRITTI</h1>
+        
+        <ul>
+            <li>
+                <span class="item-name">Crocchè di patate <small>(2 pezzi)</small></span>
+                <span class="price">3,00€</span>
+            </li>
+            <li>
+                <span class="item-name">Arancino siciliano</span>
+                <span class="price">2,50€</span>
+            </li>
+            <li>
+                <span class="item-name">Frittatina di pasta</span>
+                <span class="price">3,00€</span>
+            </li>
+            <li>
+                <span class="item-name">Fiori di zucca fritti</span>
+                <span class="price">4,00€</span>
+            </li>
+        </ul>
+
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+    </div>
+
 </body>
 </html>
